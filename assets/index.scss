@@ -1,0 +1,58 @@
+$prefix: nd-checkbox ;
+$defaultColor : #2db7f5;
+$amount: 15%;
+$disabledColor: #dadddc;
+$disabledBorderColor: #969B9C;
+.#{$prefix} {
+  width: 20px;
+  height: 20px;
+  padding: 2px;
+  display: flex;
+  &-input {
+    display: none;
+  }
+  &-container {
+    width: 100%;
+    height: 100%;
+    border: 1px solid $defaultColor;
+    cursor: pointer;
+    transition: all .3s ease;
+    border-radius: 2px;
+    &:hover {
+      box-shadow: 0 0 2px $defaultColor;
+    }
+  }
+  &-container-circle {
+    border-radius: 8px;
+  }
+  &-container-checked {
+    background-color: $defaultColor;
+  }
+  &-box {
+    display: none;
+    border-left: 3px solid $defaultColor;
+    border-bottom: 3px solid $defaultColor;
+    border-bottom-left-radius: 1px;
+    width: 12px;
+    height: 8px;
+    position: relative;
+    left: 1px;
+    top: 1px;
+    transform: rotate(-50deg);
+  }
+  &-box-checked {
+    display: block;
+    border-color: #fff;
+  }
+  &-container-disabled {
+    cursor: not-allowed;
+    border-color: $disabledBorderColor;
+    background-color: $disabledColor;
+    &:hover {
+      box-shadow: none;
+    }
+  }
+  &-box-disabled {
+    border-color: $disabledBorderColor;
+  }
+}
