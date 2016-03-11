@@ -1,2 +1,2 @@
 # react-checkBox
-React UI Component - checkBox
+React UI Component - checkbox
