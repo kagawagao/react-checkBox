@@ -35,7 +35,7 @@ export default class extends React.Component {
     const checked = true
     // [Boolean]: disabled, true as disabled, false as not
     const disable = true
-    // [String]: type, 'square' or 'circle', 'square' as default,
+    // [String]: type, 'square' or 'circle', 'square' as default
     const type = 'circle'
 
     return (
