@@ -1,6 +1,6 @@
 {
   "name": "nd-rc-checkbox",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "A React UI Component - Checkbox",
   "main": "lib/index.js",
   "directories": {

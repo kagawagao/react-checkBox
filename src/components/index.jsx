@@ -16,7 +16,7 @@ export default class Checkbox extends React.Component {
   }
 
   componentWillReceiveProps (nextProps) {
-    const {checked, disable} = nextProps
+    const {checked = false, disable = false} = nextProps
     this.setState({
       ...this.state, checked, disable
     })
